@@ -2,12 +2,17 @@
 
 pure php APC-APCu backward (and forward) compatibility layer
 
-if you get 'Error: Call to undefined function apc_store()' or you have trouble with installing pecl apcu_bu try this simple pure php replacement
+- if you get `'Error: Call to undefined function apc_store()'` and you have the **apcu-extension** installed 
+- or you have trouble with installing pecl apcu_bu try this simple pure php replacement
+- or you you have only the old **apc-extension** and you got errors like `'Call to undefined function apcu_fetch()'`
 
-simple:
+... simple download: https://raw.githubusercontent.com/SegFaulty/php-apcu-bc/master/ApcApcuCompat.php
+and 
 ```php
 include 'ApcApcuCompat.php';
 ```
+
+and you get the missing functions:
 
 
 APCu | APC
